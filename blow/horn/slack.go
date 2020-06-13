@@ -73,7 +73,7 @@ func formMessageString(ed EventData) (string, error) {
 		[]slack.MixedElement{detailText}...,
 	)
 
-	mentionText := slack.NewTextBlockObject("mrkdwn", "@here", false, false)
+	mentionText := slack.NewTextBlockObject("mrkdwn", "@raam", false, false)
 	mentionSection := slack.NewSectionBlock(mentionText, nil, nil)
 
 	msg := slack.NewBlockMessage(

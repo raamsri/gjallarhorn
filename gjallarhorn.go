@@ -61,14 +61,6 @@ func main() {
 		// Process the messages
 		for _, message := range result.Messages {
 
-			// b, err1 := json.MarshalIndent(eventData, "", "    ")
-			// if err1 != nil {
-			// 	fmt.Println("Error: ", err)
-			// 	return
-			// }
-
-			// fmt.Println(string(b))
-			// fmt.Println(message)
 			err := event.ProcessMessage(fmt.Sprintf("%s", *message.Body))
 			if err != nil {
 				fmt.Println("Error: ", err)

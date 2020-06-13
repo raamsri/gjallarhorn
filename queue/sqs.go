@@ -19,6 +19,7 @@ type DeleteMessageInput sqs.DeleteMessageInput
 // 		If success, an SQS client.
 func NewSQSClient() *sqs.SQS {
 	sess := session.Must(session.NewSessionWithOptions(session.Options{
+		Config:            aws.Config{Region: aws.String("ap-south-1")},
 		SharedConfigState: session.SharedConfigEnable,
 	}))
 

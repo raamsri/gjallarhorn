@@ -26,6 +26,7 @@ func init() {
 	eventSource["aws.tag"] = map[string]bool{"": true}
 	eventSource["aws.waf"] = map[string]bool{"": true}
 	eventSource["aws.applicationinsights"] = map[string]bool{"": true}
+	eventSource["aws.elasticloadbalancing"] = map[string]bool{"": true}
 
 }
 
